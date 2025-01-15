@@ -1,4 +1,4 @@
-POST http://localhost:3333/videos
+POST https://node-fullstack-8qo3.onrender.com/videos
 Content-Type: application/json
 
 {
@@ -10,10 +10,10 @@ Content-Type: application/json
 
 ###
 
-GET  http://localhost:3333/videos?search=
+GET  https://node-fullstack-8qo3.onrender.com/videos?search=
 
 ###
-PUT http://localhost:3333/videos/1ed19387-98e5-480b-824d-b9d9d9503063
+PUT https://node-fullstack-8qo3.onrender.com/videos/{id}
 Content-Type: application/json
 
 {

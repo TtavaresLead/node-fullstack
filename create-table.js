@@ -6,7 +6,7 @@ async function createTable() {
     try {
         await sql`
             CREATE TABLE IF NOT EXISTS videos (
-                id SERIAL PRIMARY KEY,
+                id UUID PRIMARY KEY,
                 title TEXT NOT NULL,
                 description TEXT,
                 duration INT

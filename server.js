@@ -106,10 +106,12 @@ server.delete('/videos/:id', (request, reply) => {
 
 // Inicializa o servidor
 server.listen({ 
-    port: process.env.port ?? 3333 }, (err, address) => {
+    port: process.env.PORT || 3333 
+}, (err, address) => {
     if (err) {
-        console.error('Erro ao iniciar o servidor:', err)
-        process.exit(1)
+        console.error('Erro ao iniciar o servidor:', err);
+        process.exit(1);
     }
-    console.log(`Servidor rodando em ${address}`)
-})
+    console.log(`Servidor rodando em ${address}`);
+});
+
